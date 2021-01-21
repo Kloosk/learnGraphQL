@@ -1,0 +1,29 @@
+{
+  "name": "learnGraphQL",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kloosk/learnGraphQL.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kloosk/learnGraphQL/issues"
+  },
+  "homepage": "https://github.com/Kloosk/learnGraphQL#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-graphql": "^0.12.0",
+    "graphql": "^15.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
