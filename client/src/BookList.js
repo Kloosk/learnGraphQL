@@ -20,6 +20,6 @@ const BookList = () => {
             <p>Name: {name}</p>
             <p>Age: {age}</p>
         </div>
-    )};
+    ))};
 
 export default BookList;
