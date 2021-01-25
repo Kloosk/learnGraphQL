@@ -3,6 +3,7 @@ import {graphqlHTTP} from 'express-graphql';
 
 import mongoose from 'mongoose';
 import schema from './schema/schema.js';
+import cors from 'cors';
 
 
 const app = express();
@@ -14,7 +15,7 @@ mongoose.connect(uri, { useNewUrlParser: true,useUnifiedTopology: true})
         throw new Error(err)
     })
 ;
-
+app.use(cors());
 app.use('/graphql',graphqlHTTP({
     schema,
     graphiql: true

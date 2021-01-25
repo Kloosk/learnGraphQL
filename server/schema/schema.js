@@ -89,8 +89,7 @@ const Mutation = new GraphQLObjectType({
                });
                return author.save();
            }
-       }
-   },
+       },
     addBook:{
         type: BookType,
         args:{
@@ -107,6 +106,7 @@ const Mutation = new GraphQLObjectType({
             return book.save();
         }
     }
+   },
 });
 
 export default new GraphQLSchema({
