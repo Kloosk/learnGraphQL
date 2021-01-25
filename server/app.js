@@ -6,8 +6,9 @@ import schema from './schema/schema.js';
 
 
 const app = express();
+const uri = "mongodb+srv://lukasz:madzia123@cluster0.llb2a.mongodb.net/graphqllearn?retryWrites=true&w=majority";
 
-mongoose.connect('', { useNewUrlParser: true,useUnifiedTopology: true})
+mongoose.connect(uri, { useNewUrlParser: true,useUnifiedTopology: true})
     .then(() => console.log("MongoDB successfully connected"))
     .catch(err => {
         throw new Error(err)

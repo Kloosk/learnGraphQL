@@ -8,8 +8,8 @@ import {
     GraphQLString
 } from 'graphql'
 
-import Author from './models/author.js'
-import Book from './models/book.js'
+import Author from '../models/author.js'
+import Book from '../models/book.js'
 
 const BookType = new GraphQLObjectType({
    name: "Book",
